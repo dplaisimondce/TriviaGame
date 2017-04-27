@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Triva Game</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header id="masthead">
+		<div class="container">
+			<h1> Star Wars Trivia </h1>
+		</div>
+	</header>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules">The Rules</h1>
+			<p class="rules">There are 5 questions, you have 25 seconds to answer all 5 questions.</p>
+			<h2>
+				<button type="button" id="start-button">Start</button>
+			</h2>
+			<!-- timer will be displayed in div#show-number-->
+			<div id="show-number"></div>
+			<!-- question 1 -->
+			<p class="question">1. What is Finn's proper name?</p>
+			<ul class="answers">
+			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Han SOLO</label><br/>
+			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">FN-2187</label><br/>
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Luke Skywalker</label><br/>
+			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Count Dooko</label><br/>
+			</ul>
+			<!-- question 2 -->
+			<p class="question">2. Who is Luke Skywalkers Father ?</p>
+			<ul class="answers">
+			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Darth Vader</label><br/>
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Darth Mull</label><br/>
+			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Obi wan kenobi  </label><br/>
+			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Princess Laya</label><br/>
+			</ul>
+			<!-- question 3 -->
+			<p class="question">3. What is the color of Luke's Light Saber </p>
+			<ul class="answers">
+			<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Blue</label><br/>
+			<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Purple</label><br/>
+			<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Green</label><br/>
+			<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Red</label><br/>
+			</ul>
+			<!-- question 4 -->
+			<p class="question">4. Rey knows the ways of the " "?</p>
+			<ul class="answers">
+			<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Chi</label><br/>
+			<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Force</label><br/>
+			<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">League of Shadows</label><br/>
+			<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Hand</label><br/>
+			</ul>
+			<!-- question 5 -->
+			<p class="question">4. Who is Yoda?</p>
+			<ul class="answers">
+			<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">A Storm Trooper</label><br/>
+			<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Jedi Master</label><br/>
+			<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Droid</label><br/>
+			<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Sithe Lord</label><br/>
+			</ul>
+			<!-- Hidden Buttons and Elements -->
+			<!-- Submit Button -->
+			<button type="button" id="submit">Submit Final Answers</button>
+			<!-- Results -->
+			<div id="results">
+			Show me the answers!
+				<!-- <div id="category1">
+				<p><strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
+				</div> -->
+			</div>
+			<button type="button" id="restart">Play Again</button>
+		</section>
+	</div>
+	<footer id="footer" class="site-footer">
+		<div class="container">
+			&copy; Copyright 2017 Dan Plai
+		</div>
+	</footer>
+	<!-- JavaScript File & jQuery Lib -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	
+</body>
+</html>
+
+<!-- 
+You'll create a trivia form with multiple choice or true/false options (your choice).
+
+The player will have a limited amount of time to finish the quiz.
+
+The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+Don't let the player pick more than one answer per question.
+
+Don't forget to include a countdown timer. -->
